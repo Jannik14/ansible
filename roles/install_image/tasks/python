@@ -1,0 +1,2 @@
+- name: Install Python on the rescue image
+  raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal) 
