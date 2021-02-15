@@ -1,0 +1,6 @@
+- block:
+    - name: Abort when "installimage" script doesn't exist
+      debug:
+        msg: "installimage script not found; you have either already installed the image or Hetzner renamed the script. Aborting."
+    - meta: end_play
+  when: stat_result.stat.exists == false 
