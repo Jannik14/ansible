@@ -1,0 +1,2 @@
+- name: Rebooting…
+  shell: reboot 
