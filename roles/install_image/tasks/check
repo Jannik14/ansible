@@ -1,0 +1,4 @@
+- name: Check if "installimage" script exists
+  stat:
+    path: /root/.oldroot/nfs/install/installimage
+  register: stat_result 
